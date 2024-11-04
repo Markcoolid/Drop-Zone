@@ -145,8 +145,8 @@ public class renderer {
 
     public void instructions(){
         //print instructions
-        System.out.println("                     Dodge the falling objects");
-        System.out.println("                              By Mcool");
+        System.out.println("                              Drop Zone");
+        System.out.println("                             By Mcoolid");
         System.out.println("             This is a needlessly complicated terminal game");
         System.out.println("Blocks will fall toward you, use the arrow keys to dodge the red ones");
         System.out.println("                   You must hit the green ones");
