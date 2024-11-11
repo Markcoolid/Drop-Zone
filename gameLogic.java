@@ -54,6 +54,10 @@ public class gameLogic {
         return avoid;
     }
 
+    public void setObjX(int objXi){
+        ObjX = objXi;
+    }
+
     //ticks the game forward
     public void Tick(){
         //count frames

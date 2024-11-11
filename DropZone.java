@@ -86,6 +86,7 @@ public static void game(renderer Renderer, gameLogic GameLogic){
     boolean avoid = GameLogic.getAvoid();
     int ObjY = 0;
     int ObjX = (int) (Math.random() * 10);
+    GameLogic.setObjX(ObjX);
     boolean gameOver = false;
     int score = 0;
     //whiel the game is running
