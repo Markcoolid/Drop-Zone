@@ -6,6 +6,7 @@
 //https://github.com/Markcoolid/Drop-Zone
 
 class DropZone {   
+//playerX must be static to let it be affected by the ArrowKeys object
 static int playerX = 5;
 static boolean frameIsDifferent = true;
 static int upperbound = 25;
@@ -17,7 +18,7 @@ public static void main(String[] args) {
     renderer Renderer = new renderer(upperbound); //make a new renderer
     try {
         //print instructions
-        Renderer.instructions(); 
+        System.out.print(Renderer);
         //until the start is pressed 
         while(start != 1){
             Thread.sleep((long)60/1000);
@@ -89,7 +90,7 @@ public static void game(renderer Renderer, gameLogic GameLogic){
     GameLogic.setObjX(ObjX);
     boolean gameOver = false;
     int score = 0;
-    //whiel the game is running
+    //while the game is running
     while(!gameOver){
         //if the frame is unique 
         if(frameIsDifferent){ 

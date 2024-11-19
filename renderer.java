@@ -28,8 +28,8 @@ public class renderer {
             lines[i] = "     |";
         }
         // add all the spaces before the obj add a space
-        for(int i = 0; i<ObjX; i++){
-            lines[ObjY] = lines[ObjY] + " ";
+        for(int i = 0; i<ObjX; i++){ 
+            lines[ObjY] = lines[ObjY] + " ";  
         }
         //if the object is meant to be avoided 
         if(avoid){
@@ -143,16 +143,9 @@ public class renderer {
 
     }
 
-    public void instructions(){
+    public String toString(){
         //print instructions
-        System.out.println("                              Drop Zone");
-        System.out.println("                             By Mcoolid");
-        System.out.println("             This is a needlessly complicated terminal game");
-        System.out.println("Blocks will fall toward you, use the arrow keys to dodge the red ones");
-        System.out.println("                   You must hit the green ones");
-        System.out.println("If at any point input stops working click on the java icon in the taskbar");
-        System.out.println("                           Best of luck");
-        System.out.println("                        Hit Space to Start");
+        return "The renderer function uses print to draw the game board to the screen\n                              Drop Zone\n                             By Mcoolid\n             This is a needlessly complicated terminal game\nBlocks will fall toward you, use the arrow keys to dodge the red ones\n                   You must hit the green ones\nIf at any point input stops working click on the java icon in the taskbar\n                           Best of luck\n                        Hit Space to Start";
         
     }
 }

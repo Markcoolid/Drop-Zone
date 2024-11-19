@@ -46,9 +46,6 @@ public class gameLogic {
     public int getUpperBound(){
         return upperbound;
     }
-    public void setUpperBound(int up){
-        upperbound = up;
-    }
 
     public boolean getAvoid(){
         return avoid;
@@ -56,6 +53,9 @@ public class gameLogic {
 
     public void setObjX(int objXi){
         ObjX = objXi;
+    }
+    public void setUpperBound(int up){
+        upperbound = up;
     }
 
     //ticks the game forward
@@ -119,7 +119,7 @@ public class gameLogic {
                 }
                 //if object is out of bounds set to above the player
                 if(ObjX > upperbound){
-                    ObjX = playerX  ;
+                    ObjX = playerX;
                 }
 
             }
