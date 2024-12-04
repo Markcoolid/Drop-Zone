@@ -12,10 +12,7 @@ static boolean frameIsDifferent = true;
 static int upperbound = 25;
 static int start = 0 ;
 public static void main(String[] args) {
-    EZSocket socket = new EZSocket();
-    socket.setIpAddress("localhost");
-    socket.setPort(8080);
-    socket.StartClient();
+
     new ArrowKeys(); //start the arrow keys script
 
     renderer Renderer = new renderer(upperbound); //make a new renderer
@@ -23,11 +20,11 @@ public static void main(String[] args) {
         //print instructions
         System.out.print(Renderer);
         //until the start is pressed 
-        while(socket.getDataBoolean("GameStart") != true){
+        while(start != 1){
             Thread.sleep((long)60/1000);
         }
         //while start
-    while(socket.getDataBoolean("GameStart")){
+    while(start == 1){
     //new gamelogic
     gameLogic GameLogic = new gameLogic(upperbound);
     //start game anim
