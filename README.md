@@ -9,7 +9,7 @@ I built this project as a text based game for AP Computer Science A. I wanted to
 This project had me experiment with basic custom collisions with fixed movement, and game state management. 
 
 ## How It Works
-The game runs on a fixed-timestep loop that updates player movement, enemy behavior, and collisions each frame. All rendering is done using terminal output, forcing the game logic to remain simple and efficient.
+The game runs on a fixed-timestep loop that updates player movement, Hazard movement, and collisions each frame. All rendering is done using terminal output, forcing the game logic to remain simple.
 
 Difficulty increases over time by adjusting spawn rates and movement speed. The walls of the drop zone will close in on the player as the difficulty increases, as well as the addition of green objectives the player must catch.
 
