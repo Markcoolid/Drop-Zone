@@ -57,8 +57,8 @@ public static void main(String[] args) {
     }
 
 } catch (Exception e) {
-    System.out.println("An error occured, yell at Mark or something.");
-}
+    System.out.println("An error occurred: " + e);
+    }
 }
 
 public static void setX(int dif){
@@ -117,6 +117,7 @@ public static void game(renderer Renderer, gameLogic GameLogic){
         Thread.sleep((long) 1000/60);
   
         } catch (Exception e) {
+            System.out.println("An error occurred: " + e);
         }
     }
     //reset gameboard when game ends
